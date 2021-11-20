@@ -95,6 +95,7 @@ namespace Calculadora
             this.btnMult.TabIndex = 4;
             this.btnMult.Text = "*";
             this.btnMult.UseVisualStyleBackColor = true;
+            this.btnMult.Click += new System.EventHandler(this.btnMult_Click);
             // 
             // btn4
             // 
@@ -134,6 +135,7 @@ namespace Calculadora
             this.btnDiv.TabIndex = 8;
             this.btnDiv.Text = "/";
             this.btnDiv.UseVisualStyleBackColor = true;
+            this.btnDiv.Click += new System.EventHandler(this.btnDiv_Click);
             // 
             // btn1
             // 
@@ -173,6 +175,7 @@ namespace Calculadora
             this.btnSub.TabIndex = 12;
             this.btnSub.Text = "-";
             this.btnSub.UseVisualStyleBackColor = true;
+            this.btnSub.Click += new System.EventHandler(this.btnSub_Click);
             // 
             // btnVirgula
             // 
@@ -202,6 +205,7 @@ namespace Calculadora
             this.btnIgual.TabIndex = 15;
             this.btnIgual.Text = "Enter";
             this.btnIgual.UseVisualStyleBackColor = true;
+            this.btnIgual.Click += new System.EventHandler(this.btnIgual_Click);
             // 
             // btnSoma
             // 
@@ -211,6 +215,7 @@ namespace Calculadora
             this.btnSoma.TabIndex = 16;
             this.btnSoma.Text = "+";
             this.btnSoma.UseVisualStyleBackColor = true;
+            this.btnSoma.Click += new System.EventHandler(this.btnSoma_Click);
             // 
             // btnDel
             // 
@@ -247,6 +252,7 @@ namespace Calculadora
             this.Controls.Add(this.btn7);
             this.Controls.Add(this.txtVisor);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculadora";
             this.ResumeLayout(false);
             this.PerformLayout();

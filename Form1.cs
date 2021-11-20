@@ -85,8 +85,118 @@ namespace Calculadora
 			total = 0;
 			controle = "1";
 		}
+
+        private void btnIgual_Click(object sender, EventArgs e)
+        {
+			switch (operacao)
+			{
+				case 1:
+					a = Convert.ToDouble(txtVisor.Text);
+					total = total + a;
+					txtVisor.Text = total.ToString();
+					a = 0;
+					total = 0;
+					break;
+				case 2:
+					a = Convert.ToDouble(txtVisor.Text);
+					total = total - a;
+					txtVisor.Text = total.ToString();
+					a = 0;
+					total = 0;
+					break;
+				case 3:
+					a = Convert.ToDouble(txtVisor.Text);
+					total = total * a;
+					txtVisor.Text = total.ToString();
+					a = 0;
+					total = 0;
+					break;
+				case 4:
+					a = Convert.ToDouble(txtVisor.Text);
+					total = total / a;
+					txtVisor.Text = total.ToString();
+					a = 0;
+					total = 0;
+					break;
+			}
+		}
         #endregion
 
-        
-    }
+        #region Operações
+        private void btnSoma_Click(object sender, EventArgs e)
+		{
+			if (txtVisor.Text != String.Empty)
+			{
+				a = Convert.ToDouble(txtVisor.Text);
+				total = total + a;
+				txtVisor.Text = String.Empty;
+				a = 0;
+				operacao = 1;
+			}
+			else
+			{
+				MessageBox.Show("Entre com algum valor.", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+			}
+		}
+
+        private void btnMult_Click(object sender, EventArgs e)
+        {
+			if (controle == "1" || total == 0)
+			{
+				a = Convert.ToDouble(txtVisor.Text);
+				total = a;
+				txtVisor.Text = String.Empty;
+				a = 0;
+				operacao = 3;
+				controle = "2";
+			}
+			else
+			{
+				a = Convert.ToDouble(txtVisor.Text);
+				total = total * a;
+				txtVisor.Text = String.Empty;
+				a = 0;
+				operacao = 3;
+			}
+		}
+
+        private void btnDiv_Click(object sender, EventArgs e)
+        {
+			if (controle == "1" || total == 0)
+			{
+				a = Convert.ToDouble(txtVisor.Text);
+				total = a;
+				txtVisor.Text = String.Empty;
+				a = 0;
+				operacao = 4;
+				controle = "2";
+			}
+			else
+			{
+				a = Convert.ToDouble(txtVisor.Text);
+				total = total / a;
+				txtVisor.Text = String.Empty;
+				a = 0;
+				operacao = 4;
+			}
+		}
+
+        private void btnSub_Click(object sender, EventArgs e)
+		{
+			if (txtVisor.Text != String.Empty)
+			{
+				a = Convert.ToDouble(txtVisor.Text);
+				total = a - total;
+				txtVisor.Text = String.Empty;
+				a = 0;
+				operacao = 2;
+			}
+			else
+			{
+				MessageBox.Show("Entre com algum valor.", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+			}
+		}
+
+		#endregion
+	}
 }
