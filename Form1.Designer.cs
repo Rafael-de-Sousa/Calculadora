@@ -47,13 +47,14 @@ namespace Calculadora
             this.btnIgual = new System.Windows.Forms.Button();
             this.btnSoma = new System.Windows.Forms.Button();
             this.btnDel = new System.Windows.Forms.Button();
+            this.btnPonto = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtVisor
             // 
-            this.txtVisor.Location = new System.Drawing.Point(12, 24);
+            this.txtVisor.Location = new System.Drawing.Point(12, 23);
             this.txtVisor.Name = "txtVisor";
-            this.txtVisor.Size = new System.Drawing.Size(171, 20);
+            this.txtVisor.Size = new System.Drawing.Size(170, 20);
             this.txtVisor.TabIndex = 0;
             this.txtVisor.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -145,7 +146,6 @@ namespace Calculadora
             this.btn1.TabIndex = 9;
             this.btn1.Text = "1";
             this.btn1.UseVisualStyleBackColor = true;
-            this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
             // btn2
             // 
@@ -199,7 +199,7 @@ namespace Calculadora
             // 
             // btnIgual
             // 
-            this.btnIgual.Location = new System.Drawing.Point(12, 200);
+            this.btnIgual.Location = new System.Drawing.Point(12, 210);
             this.btnIgual.Name = "btnIgual";
             this.btnIgual.Size = new System.Drawing.Size(171, 23);
             this.btnIgual.TabIndex = 15;
@@ -219,13 +219,22 @@ namespace Calculadora
             // 
             // btnDel
             // 
-            this.btnDel.Location = new System.Drawing.Point(101, 154);
+            this.btnDel.Location = new System.Drawing.Point(101, 183);
             this.btnDel.Name = "btnDel";
-            this.btnDel.Size = new System.Drawing.Size(36, 23);
+            this.btnDel.Size = new System.Drawing.Size(81, 23);
             this.btnDel.TabIndex = 17;
-            this.btnDel.Text = "del";
+            this.btnDel.Text = "AC";
             this.btnDel.UseVisualStyleBackColor = true;
             this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
+            // 
+            // btnPonto
+            // 
+            this.btnPonto.Location = new System.Drawing.Point(101, 154);
+            this.btnPonto.Name = "btnPonto";
+            this.btnPonto.Size = new System.Drawing.Size(36, 23);
+            this.btnPonto.TabIndex = 18;
+            this.btnPonto.Text = ".";
+            this.btnPonto.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -233,6 +242,7 @@ namespace Calculadora
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.ClientSize = new System.Drawing.Size(202, 245);
+            this.Controls.Add(this.btnPonto);
             this.Controls.Add(this.btnDel);
             this.Controls.Add(this.btnSoma);
             this.Controls.Add(this.btnIgual);
@@ -279,6 +289,7 @@ namespace Calculadora
         private System.Windows.Forms.Button btnIgual;
         private System.Windows.Forms.Button btnSoma;
         private System.Windows.Forms.Button btnDel;
+        private System.Windows.Forms.Button btnPonto;
     }
 }
 
