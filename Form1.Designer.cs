@@ -235,6 +235,7 @@ namespace Calculadora
             this.btnPonto.TabIndex = 18;
             this.btnPonto.Text = ".";
             this.btnPonto.UseVisualStyleBackColor = true;
+            this.btnPonto.Click += new System.EventHandler(this.btnPonto_Click);
             // 
             // Form1
             // 

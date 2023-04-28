@@ -181,6 +181,11 @@ namespace Calculadora
 			}
 		}
 
+        private void btnPonto_Click(object sender, EventArgs e)
+        {
+			txtVisor.Text += ".";
+		}
+
         private void btnSub_Click(object sender, EventArgs e)
 		{
 			if (txtVisor.Text != String.Empty)
