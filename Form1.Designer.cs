@@ -48,11 +48,12 @@ namespace Calculadora
             this.btnSoma = new System.Windows.Forms.Button();
             this.btnDel = new System.Windows.Forms.Button();
             this.btnPonto = new System.Windows.Forms.Button();
+            this.btnC = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtVisor
             // 
-            this.txtVisor.Location = new System.Drawing.Point(12, 23);
+            this.txtVisor.Location = new System.Drawing.Point(13, 21);
             this.txtVisor.Name = "txtVisor";
             this.txtVisor.Size = new System.Drawing.Size(170, 20);
             this.txtVisor.TabIndex = 0;
@@ -60,7 +61,7 @@ namespace Calculadora
             // 
             // btn7
             // 
-            this.btn7.Location = new System.Drawing.Point(11, 67);
+            this.btn7.Location = new System.Drawing.Point(12, 57);
             this.btn7.Name = "btn7";
             this.btn7.Size = new System.Drawing.Size(36, 23);
             this.btn7.TabIndex = 1;
@@ -70,7 +71,7 @@ namespace Calculadora
             // 
             // btn8
             // 
-            this.btn8.Location = new System.Drawing.Point(56, 67);
+            this.btn8.Location = new System.Drawing.Point(57, 57);
             this.btn8.Name = "btn8";
             this.btn8.Size = new System.Drawing.Size(36, 23);
             this.btn8.TabIndex = 2;
@@ -80,7 +81,7 @@ namespace Calculadora
             // 
             // btn9
             // 
-            this.btn9.Location = new System.Drawing.Point(101, 67);
+            this.btn9.Location = new System.Drawing.Point(102, 57);
             this.btn9.Name = "btn9";
             this.btn9.Size = new System.Drawing.Size(36, 23);
             this.btn9.TabIndex = 3;
@@ -90,7 +91,7 @@ namespace Calculadora
             // 
             // btnMult
             // 
-            this.btnMult.Location = new System.Drawing.Point(146, 67);
+            this.btnMult.Location = new System.Drawing.Point(147, 57);
             this.btnMult.Name = "btnMult";
             this.btnMult.Size = new System.Drawing.Size(36, 23);
             this.btnMult.TabIndex = 4;
@@ -100,7 +101,7 @@ namespace Calculadora
             // 
             // btn4
             // 
-            this.btn4.Location = new System.Drawing.Point(11, 96);
+            this.btn4.Location = new System.Drawing.Point(12, 86);
             this.btn4.Name = "btn4";
             this.btn4.Size = new System.Drawing.Size(36, 23);
             this.btn4.TabIndex = 5;
@@ -110,7 +111,7 @@ namespace Calculadora
             // 
             // btn5
             // 
-            this.btn5.Location = new System.Drawing.Point(56, 96);
+            this.btn5.Location = new System.Drawing.Point(57, 86);
             this.btn5.Name = "btn5";
             this.btn5.Size = new System.Drawing.Size(36, 23);
             this.btn5.TabIndex = 6;
@@ -120,7 +121,7 @@ namespace Calculadora
             // 
             // btn6
             // 
-            this.btn6.Location = new System.Drawing.Point(101, 96);
+            this.btn6.Location = new System.Drawing.Point(102, 86);
             this.btn6.Name = "btn6";
             this.btn6.Size = new System.Drawing.Size(36, 23);
             this.btn6.TabIndex = 7;
@@ -130,7 +131,7 @@ namespace Calculadora
             // 
             // btnDiv
             // 
-            this.btnDiv.Location = new System.Drawing.Point(146, 96);
+            this.btnDiv.Location = new System.Drawing.Point(147, 86);
             this.btnDiv.Name = "btnDiv";
             this.btnDiv.Size = new System.Drawing.Size(36, 23);
             this.btnDiv.TabIndex = 8;
@@ -140,7 +141,7 @@ namespace Calculadora
             // 
             // btn1
             // 
-            this.btn1.Location = new System.Drawing.Point(11, 125);
+            this.btn1.Location = new System.Drawing.Point(12, 115);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(36, 23);
             this.btn1.TabIndex = 9;
@@ -149,7 +150,7 @@ namespace Calculadora
             // 
             // btn2
             // 
-            this.btn2.Location = new System.Drawing.Point(56, 125);
+            this.btn2.Location = new System.Drawing.Point(57, 115);
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(36, 23);
             this.btn2.TabIndex = 10;
@@ -159,7 +160,7 @@ namespace Calculadora
             // 
             // btn3
             // 
-            this.btn3.Location = new System.Drawing.Point(101, 125);
+            this.btn3.Location = new System.Drawing.Point(102, 115);
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(36, 23);
             this.btn3.TabIndex = 11;
@@ -169,7 +170,7 @@ namespace Calculadora
             // 
             // btnSub
             // 
-            this.btnSub.Location = new System.Drawing.Point(146, 125);
+            this.btnSub.Location = new System.Drawing.Point(147, 115);
             this.btnSub.Name = "btnSub";
             this.btnSub.Size = new System.Drawing.Size(36, 23);
             this.btnSub.TabIndex = 12;
@@ -179,7 +180,7 @@ namespace Calculadora
             // 
             // btnVirgula
             // 
-            this.btnVirgula.Location = new System.Drawing.Point(56, 154);
+            this.btnVirgula.Location = new System.Drawing.Point(57, 144);
             this.btnVirgula.Name = "btnVirgula";
             this.btnVirgula.Size = new System.Drawing.Size(36, 23);
             this.btnVirgula.TabIndex = 13;
@@ -189,7 +190,7 @@ namespace Calculadora
             // 
             // btn0
             // 
-            this.btn0.Location = new System.Drawing.Point(11, 154);
+            this.btn0.Location = new System.Drawing.Point(12, 144);
             this.btn0.Name = "btn0";
             this.btn0.Size = new System.Drawing.Size(36, 23);
             this.btn0.TabIndex = 14;
@@ -199,7 +200,7 @@ namespace Calculadora
             // 
             // btnIgual
             // 
-            this.btnIgual.Location = new System.Drawing.Point(12, 210);
+            this.btnIgual.Location = new System.Drawing.Point(13, 202);
             this.btnIgual.Name = "btnIgual";
             this.btnIgual.Size = new System.Drawing.Size(171, 23);
             this.btnIgual.TabIndex = 15;
@@ -209,7 +210,7 @@ namespace Calculadora
             // 
             // btnSoma
             // 
-            this.btnSoma.Location = new System.Drawing.Point(146, 154);
+            this.btnSoma.Location = new System.Drawing.Point(147, 144);
             this.btnSoma.Name = "btnSoma";
             this.btnSoma.Size = new System.Drawing.Size(36, 23);
             this.btnSoma.TabIndex = 16;
@@ -219,7 +220,7 @@ namespace Calculadora
             // 
             // btnDel
             // 
-            this.btnDel.Location = new System.Drawing.Point(101, 183);
+            this.btnDel.Location = new System.Drawing.Point(102, 173);
             this.btnDel.Name = "btnDel";
             this.btnDel.Size = new System.Drawing.Size(81, 23);
             this.btnDel.TabIndex = 17;
@@ -229,7 +230,7 @@ namespace Calculadora
             // 
             // btnPonto
             // 
-            this.btnPonto.Location = new System.Drawing.Point(101, 154);
+            this.btnPonto.Location = new System.Drawing.Point(102, 144);
             this.btnPonto.Name = "btnPonto";
             this.btnPonto.Size = new System.Drawing.Size(36, 23);
             this.btnPonto.TabIndex = 18;
@@ -237,12 +238,23 @@ namespace Calculadora
             this.btnPonto.UseVisualStyleBackColor = true;
             this.btnPonto.Click += new System.EventHandler(this.btnPonto_Click);
             // 
+            // btnC
+            // 
+            this.btnC.Location = new System.Drawing.Point(12, 173);
+            this.btnC.Name = "btnC";
+            this.btnC.Size = new System.Drawing.Size(81, 23);
+            this.btnC.TabIndex = 19;
+            this.btnC.Text = "C";
+            this.btnC.UseVisualStyleBackColor = true;
+            this.btnC.Click += new System.EventHandler(this.btnC_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.ClientSize = new System.Drawing.Size(202, 245);
+            this.ClientSize = new System.Drawing.Size(202, 243);
+            this.Controls.Add(this.btnC);
             this.Controls.Add(this.btnPonto);
             this.Controls.Add(this.btnDel);
             this.Controls.Add(this.btnSoma);
@@ -291,6 +303,7 @@ namespace Calculadora
         private System.Windows.Forms.Button btnSoma;
         private System.Windows.Forms.Button btnDel;
         private System.Windows.Forms.Button btnPonto;
+        private System.Windows.Forms.Button btnC;
     }
 }
 

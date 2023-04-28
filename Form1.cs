@@ -82,8 +82,6 @@ namespace Calculadora
         private void btnDel_Click(object sender, EventArgs e)
         {
 			txtVisor.Text = String.Empty;
-			total = 0;
-			controle = "1";
 		}
 
         private void btnIgual_Click(object sender, EventArgs e)
@@ -184,6 +182,13 @@ namespace Calculadora
         private void btnPonto_Click(object sender, EventArgs e)
         {
 			txtVisor.Text += ".";
+		}
+
+        private void btnC_Click(object sender, EventArgs e)
+        {
+			string n = txtVisor.Text;
+			n = n.Remove(n.Length - 1);
+			txtVisor.Text = n;
 		}
 
         private void btnSub_Click(object sender, EventArgs e)
