@@ -20,14 +20,12 @@ namespace Calculadora
             InitializeComponent();
         }
 
-		# region Teclas com os numeros
-
-        private void btn1_Click(object sender, EventArgs e)
-        {
+		#region Teclas com os numeros
+		private void btn1_Click(object sender, EventArgs e)
+		{
 			txtVisor.Text += "1";
 		}
-
-        private void btn2_Click(object sender, EventArgs e)
+		private void btn2_Click(object sender, EventArgs e)
         {
 			txtVisor.Text += "2";
 		}
@@ -187,9 +185,15 @@ namespace Calculadora
         private void btnC_Click(object sender, EventArgs e)
         {
 			string n = txtVisor.Text;
-			n = n.Remove(n.Length - 1);
-			txtVisor.Text = n;
+			if (txtVisor.Text != String.Empty)
+            {
+				n = n.Remove(n.Length - 1);
+				txtVisor.Text = n;
+			}
+			
 		}
+
+        
 
         private void btnSub_Click(object sender, EventArgs e)
 		{
